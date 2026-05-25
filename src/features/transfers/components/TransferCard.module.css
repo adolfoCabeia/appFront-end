@@ -1,0 +1,119 @@
+.card {
+  padding: 1.15rem;
+
+  border-radius: 20px;
+
+  background: rgba(2, 6, 23, 0.6);
+
+  border: 1px solid rgba(148, 163, 184, 0.08);
+
+  backdrop-filter: blur(18px);
+
+  transition: all .25s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(59,130,246,.25);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,.45);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+}
+
+.position {
+  width: fit-content;
+
+  padding: .3rem .65rem;
+
+  border-radius: 999px;
+
+  font-size: .72rem;
+  font-weight: 700;
+
+  color: #93c5fd;
+
+  background: rgba(37,99,235,.12);
+}
+
+.transferIcon {
+  color: rgba(59,130,246,.75);
+}
+
+.route {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  gap: .8rem;
+
+  align-items: center;
+}
+
+.club {
+  font-size: .9rem;
+  font-weight: 600;
+
+  color: #e2e8f0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.club:last-child {
+  text-align: right;
+}
+
+.routeIcon {
+  color: #3b82f6;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.value,
+.market {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+
+  font-size: .82rem;
+  font-weight: 700;
+
+  color: #cbd5e1;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+
+  color: #64748b;
+
+  font-size: .75rem;
+}
